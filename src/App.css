@@ -1,38 +1,79 @@
-.App {
+/*.App {
   text-align: center;
+}*/
+
+* {
+    font-family: 'Yusei Magic', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+    background: rgb(170, 83, 252);
+    color: rgb(152, 197, 62);
+    font-size: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.todo-app {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: start;
+  width: 520px;
+  min-height: 500px;
+  background: #2e365a;
+  text-align: center;
+  margin: 50px auto;
+  border-radius: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+h1 {
+    color: white;
+    font-weight: 300;
+    margin: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.todo-input {
+    margin: 10px;
+    outline: none;
+    width: 320px;
+    height: 30px;
+    font-weight: 800;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.todo-btn{
+    height: 30px;
+    width: 100px;
+    border-radius: 8px;
+    outline: none;
+    background-color: red;
+    font-weight: 500;
+    color: white;
+}
+
+.todo-input::placeholder {
+    color: #e2e2e2;
+}
+
+.icons {
+    color: white;
+    align-items: center;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.delete-icon {
+    margin-right: 15px;
+}
+
+.delete-icon:hover{
+    color: red;
+    font-size: 35px;
+}
+
+.edit-icon:hover{
+    color: red;
+    font-size: 35px;
 }
